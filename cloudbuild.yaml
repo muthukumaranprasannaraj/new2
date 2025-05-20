@@ -1,0 +1,13 @@
+steps:
+  # Step 1: TESTING BRANCH NAME
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:latest'
+    script: |
+        #!/usr/bin/env bash
+        echo "Hiiiiii... FROM NEW2 REPO";
+        echo $BRANCH_NAME
+        
+  
+options:
+  logging: CLOUD_LOGGING_ONLY
+  automapSubstitutions: true
+  dynamicSubstitutions: true
